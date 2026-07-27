@@ -95,7 +95,7 @@ export default function ComplaintForm() {
           <div className="row risk-row">
             <div className="field severity-field">
               <label>Severity (Suggested)</label>
-              <input type="text" readOnly value={risk.severity || ""} />
+              <textarea readOnly value={risk.severity || ""} rows="2" />
             </div>
             <div className="field action-field">
               <label>Suggested Next Action</label>

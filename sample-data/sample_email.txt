@@ -1,0 +1,21 @@
+From: qa@apollopharmacy.example.com
+To: support@aivoa.ai
+Subject: URGENT: Discolored Capsules Report
+
+Dear Quality Assurance Team,
+
+We are writing to officially log a customer complaint regarding a recent batch of your product. 
+Yesterday (July 26, 2026), one of our branches received a return from a patient who reported that the capsules they purchased were visibly discolored. Some of them have turned a dark brownish shade instead of the standard white and yellow color. 
+
+Here are the details we have on file:
+Product: Amoxicillin capsules
+Strength: 500mg
+Batch Number: BMX24602
+Affected Quantity: 48 capsules (2 full blister packs)
+Manufacturing Date: Jan 2025
+Expiry Date: Dec 2027
+
+Please investigate this issue urgently and let us know what replacement steps we need to take, as this could pose a risk to patient safety.
+
+Best regards,
+Apollo Pharmacy QA Team

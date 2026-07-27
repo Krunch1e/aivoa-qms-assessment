@@ -178,9 +178,15 @@ section h3::before {
   transition: all 0.3s ease;
 }
 
+.field textarea {
+  resize: vertical;
+  min-height: 48px;
+  line-height: 1.5;
+}
+
 .field input:read-only,
 .field textarea:read-only {
-  background: rgba(248, 250, 252, 0.8);
+  background: #f8fafc;
   cursor: default;
 }
 

@@ -94,11 +94,15 @@ export default function ComplaintForm() {
           <h4>AI Copilot Risk Assessment</h4>
           <div className="row">
             <Field label="Severity (Suggested)" value={risk.severity} />
-            <Field label="Suggested Next Action" value={risk.suggested_next_action} />
+            <div className="field"></div>
+          </div>
+          <div className="field">
+            <label>Suggested Next Action</label>
+            <textarea readOnly value={risk.suggested_next_action || ""} rows="2" />
           </div>
           <div className="field">
             <label>Initial Risk Assessment</label>
-            <textarea readOnly value={risk.initial_risk_assessment || ""} />
+            <textarea readOnly value={risk.initial_risk_assessment || ""} rows="4" />
           </div>
         </div>
       </section>

@@ -8,3 +8,4 @@ groq
 langgraph
 pdfplumber
 python-dotenv
+fpdf

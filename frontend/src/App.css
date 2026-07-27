@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --primary-color: #3b82f6;
-  --primary-hover: #2563eb;
-  --bg-gradient: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.4);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-  --text-main: #1e293b;
-  --text-muted: #64748b;
-  --input-bg: rgba(255, 255, 255, 0.9);
-  --input-border: rgba(203, 213, 225, 0.6);
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-gradient: #f8fafc;
+  --panel-bg: #ffffff;
+  --panel-border: #e2e8f0;
+  --panel-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
   --input-focus: #3b82f6;
 }
 
@@ -37,15 +37,13 @@ body {
   margin: 0 auto;
 }
 
-/* Glassmorphic Panels */
+/* Panels */
 .complaint-form,
 .copilot-chat {
-  background: var(--glass-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--glass-border);
-  border-radius: 24px;
-  box-shadow: var(--glass-shadow);
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  box-shadow: var(--panel-shadow);
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -79,14 +77,14 @@ body {
 
 .form-header h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   color: #0f172a;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .subtitle {
   color: var(--text-muted);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -121,20 +119,20 @@ body {
 }
 
 section {
-  margin-bottom: 28px;
-  background: rgba(255,255,255,0.4);
-  padding: 20px;
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.5);
+  margin-bottom: 32px;
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
 }
 
 section h3 {
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--text-main);
   letter-spacing: 0.05em;
-  margin-bottom: 16px;
-  font-weight: 600;
+  margin-bottom: 20px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -151,34 +149,33 @@ section h3::before {
 
 .row {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .field {
   flex: 1;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
 .field label {
   display: block;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-muted);
-  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 8px;
 }
 
 .field input,
 .field textarea {
   width: 100%;
-  padding: 12px 16px;
+  padding: 14px 16px;
   border: 1px solid var(--input-border);
-  border-radius: 10px;
-  font-size: 14px;
+  border-radius: 8px;
+  font-size: 15px;
   background: var(--input-bg);
   color: var(--text-main);
   transition: all 0.3s ease;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
 }
 
 .field input:read-only,
@@ -208,21 +205,21 @@ section h3::before {
 }
 
 .risk-box {
-  background: linear-gradient(to right, rgba(254, 242, 242, 0.8), rgba(255, 255, 255, 0.5));
+  background: #fff1f2;
   border-left: 4px solid #ef4444;
-  border-radius: 12px;
-  padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 24px;
 }
 
 .risk-box h4 {
-  color: #b91c1c;
-  margin-bottom: 16px;
-  font-size: 15px;
+  color: #991b1b;
+  margin-bottom: 20px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
+  font-weight: 700;
 }
 
 .risk-box h4::before {
@@ -275,10 +272,8 @@ section h3::before {
 
 .chat-header h3 {
   font-weight: 700;
-  font-size: 20px;
-  background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  color: #0f172a;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -304,18 +299,17 @@ section h3::before {
   background: transparent;
 }
 .chat-log::-webkit-scrollbar-thumb {
-  background: rgba(100, 116, 139, 0.2);
+  background: #cbd5e1;
   border-radius: 3px;
 }
 
 .message {
-  padding: 14px 18px;
-  border-radius: 16px;
-  font-size: 14px;
-  line-height: 1.5;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.6;
   max-width: 85%;
   animation: slideIn 0.3s ease-out forwards;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 @keyframes slideIn {
@@ -324,15 +318,14 @@ section h3::before {
 }
 
 .message.assistant {
-  background: #ffffff;
+  background: #f1f5f9;
   color: var(--text-main);
   align-self: flex-start;
   border-bottom-left-radius: 4px;
-  border: 1px solid var(--input-border);
 }
 
 .message.user {
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  background: var(--primary-color);
   color: white;
   align-self: flex-end;
   border-bottom-right-radius: 4px;
@@ -363,30 +356,28 @@ section h3::before {
   align-items: center;
   gap: 12px;
   background: #ffffff;
-  border: 1px solid var(--input-border);
-  border-radius: 14px;
-  padding: 10px 14px;
+  border: 2px solid var(--input-border);
+  border-radius: 12px;
+  padding: 12px 16px;
   margin-top: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
   transition: all 0.3s ease;
 }
 
 .chat-input-row:focus-within {
   border-color: var(--input-focus);
-  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.15);
 }
 
 .chat-input-row input[type="text"] {
   flex: 1;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 16px;
   background: transparent;
   color: var(--text-main);
 }
 
 .chat-input-row input[type="text"]::placeholder {
-  color: #94a3b8;
+  color: #64748b;
 }
 
 .icon-btn {
